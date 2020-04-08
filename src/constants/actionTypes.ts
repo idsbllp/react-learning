@@ -1,0 +1,4 @@
+export const ACTION_TYPES = {
+  ADD_COUNT: 'ADD_COUNT',
+  MINUS_COUNT: 'MINUS_COUNT',
+};

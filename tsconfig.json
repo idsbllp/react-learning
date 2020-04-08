@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "$store": ["redux/store"],
+      "$actions/*": ["redux/actions/*"],
+      "$selectors/*": ["redux/selectors/*"],
+      "$components/*": ["components/*"],
+      "$utils/*": ["utils/*"],
+      "$typings/*": ["typings/*"],
+      "$constants/*": ["constants/*"],
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

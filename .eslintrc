@@ -1,0 +1,11 @@
+// 你的 ESLint 配置
+{
+  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error", // 检查 Hook 的规则
+    "react-hooks/exhaustive-deps": "warn" // 检查 effect 的依赖
+  }
+}
