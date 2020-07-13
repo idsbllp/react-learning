@@ -1,0 +1,82 @@
+.con {
+  position: relative;
+  height: 125px;
+  text-align: left;
+  color: #ccc;
+}
+
+.placeholder {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+
+.circle-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+.circle-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.circle-exit {
+  opacity: 1;
+}
+.circle-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+.line {
+  margin-top: -10px;
+  margin-left: 14px;
+  width: 2px;
+  height: 100px;
+  background: #3370ff;
+}
+
+.line-enter {
+  opacity: 0;
+}
+.line-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.line-exit {
+  opacity: 1;
+}
+.line-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+// @keyframes circle-animation {
+//   from {
+//     opacity: 0;
+//     transform: scale(.8);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+// }
+
+// .circle svg {
+//   animation: circle-animation .5s;
+// }
+
+// @keyframes line-animation {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .line {
+//   animation: line-animation .5s;
+// }

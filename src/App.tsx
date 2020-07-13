@@ -6,6 +6,7 @@ import Grid from '$components/grid/Grid';
 import Count from '$components/count';
 import ChildrenComponent from '$components/children/Children';
 import MouseEventCom from '$components/mouse-event-com';
+import ZoomIn from '$components/zoom-in';
 
 import StateHook from './hooks/state-hook/StateHook';
 import ReducerHook from './hooks/reducer-hook';
@@ -37,6 +38,9 @@ function App() {
         <ChildrenComponent>
           ChildrenComponent
         </ChildrenComponent>
+      </Grid>
+      <Grid title="ZoomIn">
+        <ZoomIn />
       </Grid>
     </div>
   );
