@@ -1,6 +1,6 @@
 // 你的 ESLint 配置
 {
-  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "extends": ["react-app"],
   "plugins": [
     "react-hooks"
   ],
