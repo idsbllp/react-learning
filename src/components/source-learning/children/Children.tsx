@@ -1,6 +1,6 @@
 import React, { Component, Children } from 'react';
 
-export default class ChildrenComponent extends Component {
+class ChildrenComponent extends Component {
   render() {
     const { children } = this.props;
     const foo = Children.map(children, child => {
@@ -15,3 +15,5 @@ export default class ChildrenComponent extends Component {
     );
   }
 }
+
+export default ChildrenComponent;
