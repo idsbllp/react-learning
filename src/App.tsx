@@ -7,18 +7,22 @@ import Count from '$components/count';
 import ChildrenComponent from '$components/children/Children';
 import MouseEventCom from '$components/mouse-event-com';
 import ZoomIn from '$components/zoom-in';
+import Portal from '$components/react16/portal';
+import CreateContextProvider from '$components/react16/create-context';
 
 import StateHook from './hooks/state-hook/StateHook';
 import ReducerHook from './hooks/reducer-hook';
 import EffectHook from './hooks/effect-hook';
 import ContextHook from './hooks/context-hook';
-import Portal from '$components/react16/portal';
 
 function App() {
   return (
     <div className="App">
       <Grid title="Mouse Event Test">
         <MouseEventCom />
+      </Grid>
+      <Grid title="CreateContextProvider">
+        <CreateContextProvider />
       </Grid>
       <Grid title="ContextHook">
         <ContextHook />
