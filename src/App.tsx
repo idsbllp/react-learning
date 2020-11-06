@@ -12,6 +12,7 @@ import StateHook from './hooks/state-hook/StateHook';
 import ReducerHook from './hooks/reducer-hook';
 import EffectHook from './hooks/effect-hook';
 import ContextHook from './hooks/context-hook';
+import Portal from '$components/react16/portal';
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
       </Grid>
       <Grid title="ZoomIn">
         <ZoomIn />
+      </Grid>
+      <Grid title="Portal">
+        <Portal />
       </Grid>
     </div>
   );
