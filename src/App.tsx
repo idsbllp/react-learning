@@ -7,6 +7,7 @@ import Count from '$components/count';
 import ChildrenComponent from '$components/children/Children';
 import MouseEventCom from '$components/mouse-event-com';
 import ZoomIn from '$components/zoom-in';
+import List from '$components/list';
 import Portal from '$components/react16/portal';
 import CreateContextProvider from '$components/react16/create-context';
 
@@ -18,6 +19,9 @@ import ContextHook from './hooks/context-hook';
 function App() {
   return (
     <div className="App">
+      <Grid title="Test List">
+        <List />
+      </Grid>
       <Grid title="Mouse Event Test">
         <MouseEventCom />
       </Grid>
