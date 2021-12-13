@@ -19,7 +19,7 @@ import ContextHook from './hooks/context-hook';
 function App() {
   return (
     <div className="App">
-      <Grid title="Test List">
+      {/* <Grid title="Test List">
         <List />
       </Grid>
       <Grid title="Mouse Event Test">
@@ -53,6 +53,11 @@ function App() {
       </Grid>
       <Grid title="Portal">
         <Portal />
+      </Grid> */}
+      <Grid title="ChildrenComponent">
+        <ChildrenComponent>
+          ChildrenComponent
+        </ChildrenComponent>
       </Grid>
     </div>
   );
