@@ -15,10 +15,14 @@ import StateHook from './hooks/state-hook/StateHook';
 import ReducerHook from './hooks/reducer-hook';
 import EffectHook from './hooks/effect-hook';
 import ContextHook from './hooks/context-hook';
+import BatchedUpdate from '$components/batch-update';
 
 function App() {
   return (
     <div className="App">
+      <Grid title="BatchedUpdate">
+        <BatchedUpdate />
+      </Grid>
       <Grid title="Test List">
         <List />
       </Grid>
