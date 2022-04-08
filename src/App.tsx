@@ -20,11 +20,11 @@ import BatchedUpdate from '$components/batch-update';
 function App() {
   return (
     <div className="App">
-      <Grid title="BatchedUpdate">
-        <BatchedUpdate />
-      </Grid>
       <Grid title="Test List">
         <List />
+      </Grid>
+      <Grid title="BatchedUpdate">
+        <BatchedUpdate />
       </Grid>
       <Grid title="Mouse Event Test">
         <MouseEventCom />
