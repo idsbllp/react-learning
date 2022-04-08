@@ -1,8 +1,8 @@
 import { ThunkAction } from 'redux-thunk';
-import rootReducer from 'redux/reducers';
 import { Action } from 'redux';
+import store from '$store';
 
-export type IRootState = ReturnType<typeof rootReducer>;
+export type IRootState = ReturnType<typeof store.getState>;
 
 export type IAppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
