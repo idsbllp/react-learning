@@ -19,7 +19,7 @@ module.exports = {
     },
     docs: {
       description: 'Documentation only changes',
-      emoji: '✏️',
+      emoji: '📝',
       value: 'docs'
     },
     feat: {
@@ -34,7 +34,7 @@ module.exports = {
     },
     perf: {
       description: 'A code change that improves performance',
-      emoji: '⚡️',
+      emoji: '⚡',
       value: 'perf'
     },
     refactor: {
