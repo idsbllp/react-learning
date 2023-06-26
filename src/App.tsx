@@ -16,11 +16,15 @@ import ReducerHook from './hooks/reducer-hook';
 import EffectHook from './hooks/effect-hook';
 import ContextHook from './hooks/context-hook';
 import BatchedUpdate from '$components/batch-update';
+import React18 from '$components/react18/react18';
 
 function App() {
   return (
     <div className="App">
-      <Grid title="Test List">
+      <Grid title="React 18">
+        <React18 />
+      </Grid>
+      {/* <Grid title="Test List">
         <List />
       </Grid>
       <Grid title="BatchedUpdate">
@@ -62,7 +66,7 @@ function App() {
         <ChildrenComponent>
           ChildrenComponent
         </ChildrenComponent>
-      </Grid>
+      </Grid> */}
     </div>
   );
 }

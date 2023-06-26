@@ -1,3 +1,3 @@
 interface Window {
-  test: any;
+  root: ReactDOM.Root;
 }
