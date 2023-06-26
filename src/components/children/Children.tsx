@@ -1,10 +1,10 @@
-import React, { Component, Children } from 'react';
+import React, { Component, Children, PropsWithChildren } from 'react';
 
 interface IState {
   number: number;
 }
 
-export default class ChildrenComponent extends Component<{}, IState> {
+export default class ChildrenComponent extends Component<PropsWithChildren, IState> {
   state: IState = {
     number: 0,
   };

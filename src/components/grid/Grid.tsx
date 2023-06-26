@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import './grid.scss';
 
-interface IGridProps {
+interface IGridProps extends PropsWithChildren {
   title: string;
 }
 

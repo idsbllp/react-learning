@@ -11,6 +11,7 @@ const decrementCountNormal = () => ({
 });
 
 /** redux-thunk */
+ // eslint-disable-next-line 
 const incrementCountThunk = (): IAppThunk<Promise<void>> => {
   return async dispatch => {
     return sleep(2000).then(() => {
