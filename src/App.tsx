@@ -17,10 +17,10 @@ import EffectHook from './hooks/effect-hook';
 import ContextHook from './hooks/context-hook';
 import BatchedUpdate from '$components/batch-update';
 
-function App() {
+function App(props: { i: number }) {
   return (
     <div className="App">
-      <Grid title="Test List">
+      {/* <Grid title="Test List">
         <List />
       </Grid>
       <Grid title="BatchedUpdate">
@@ -57,7 +57,7 @@ function App() {
       </Grid>
       <Grid title="Portal">
         <Portal />
-      </Grid>
+      </Grid> */}
       <Grid title="ChildrenComponent">
         <ChildrenComponent>
           ChildrenComponent

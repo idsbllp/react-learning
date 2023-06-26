@@ -7,12 +7,23 @@ import * as serviceWorker from './serviceWorker';
 import store from '$store';
 // import Root from '$components/root';
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root'),
-);
+let i = 0;
+
+function render() {
+  const Cp = <App i={++i} />;
+  (window as any).Cp = Cp;
+  ReactDOM.render(
+    // <Provider store={store}>
+    Cp,
+    // </Provider>,
+    document.getElementById('root'),
+  );
+}
+
+(window as any).render = render;
+(window as any).ReactDOM = ReactDOM;
+
+render();
 
 // const foo = ReactDOM.render(
 //   <Root />,
