@@ -1,4 +1,4 @@
-import React, { Component, Children, PropsWithChildren, useState } from 'react';
+import React, { Component, Children, PropsWithChildren, useState, useLayoutEffect, useEffect } from 'react';
 import { sleep } from '$utils/timer';
 import { flushSync } from 'react-dom';
 
@@ -11,11 +11,28 @@ const AutomaticBatching: React.FC<PropsWithChildren> = props => {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
+  useLayoutEffect(() => {
+    console.log('useLayoutEffect 111111');
+    return () => {
+      console.log('useLayoutEffect 22222');
+    }
+  }, [count2]);
+
+
+  useEffect(() => {
+    console.log('useEffect 111111');
+    return () => {
+      console.log('useEffect 22222');
+    }
+  }, [count2]);
+
+
   return (
     <div
       onClick={async () => {
         await sleep(200);
         setCount1(count => count + 1);
+        // await Promise.resolve();
         setCount2(count => count + 1);
       }}
     >
@@ -74,8 +91,8 @@ const React18: React.FC = () => {
   return (
     <>
       <AutomaticBatching />
-      <FlushSync />
-      <SuspenseComponent />
+      {/* <FlushSync /> */}
+      {/* <SuspenseComponent /> */}
     </>
   )
 };
