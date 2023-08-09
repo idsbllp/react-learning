@@ -9,6 +9,15 @@ export default class ChildrenComponent extends Component<{}, IState> {
     number: 0,
   };
 
+  getSnapshotBeforeUpdate() {
+    console.log('logllp getSnapshotBeforeUpdate');
+    return null;
+  }
+
+  componentDidUpdate(prevProps: Readonly<{}>, prevState: Readonly<IState>, snapshot?: any): void {
+    // 
+  }
+
   componentDidMount() {
     (window as any).setNumber = this.setNumber;
 

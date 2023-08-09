@@ -20,7 +20,7 @@ import BatchedUpdate from '$components/batch-update';
 function App() {
   return (
     <div className="App">
-      <Grid title="Test List">
+      {/* <Grid title="Test List">
         <List />
       </Grid>
       <Grid title="BatchedUpdate">
@@ -37,11 +37,11 @@ function App() {
       </Grid>
       <Grid title="Redux with Saga Count">
         <Count />
-      </Grid>
+      </Grid> */}
       <Grid title="StateHook">
         <StateHook />
       </Grid>
-      <Grid title="EffectHook">
+      {/* <Grid title="EffectHook">
         <EffectHook />
       </Grid>
       <Grid title="ReducerHook">
@@ -62,7 +62,12 @@ function App() {
         <ChildrenComponent>
           ChildrenComponent
         </ChildrenComponent>
-      </Grid>
+      </Grid> */}
+      <Grid title="ChildrenComponent">
+        <ChildrenComponent>
+          ChildrenComponent
+        </ChildrenComponent>
+      </Grid> 
     </div>
   );
 }
