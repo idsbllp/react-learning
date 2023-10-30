@@ -16,6 +16,7 @@ import ReducerHook from './hooks/reducer-hook';
 import EffectHook from './hooks/effect-hook';
 import ContextHook from './hooks/context-hook';
 import BatchedUpdate from '$components/batch-update';
+import LayoutEffectHook from 'hooks/effect-hook/LayoutEffectHook';
 
 function App() {
   return (
@@ -37,11 +38,11 @@ function App() {
       </Grid>
       <Grid title="Redux with Saga Count">
         <Count />
-      </Grid> */}
+      </Grid>
       <Grid title="StateHook">
         <StateHook />
       </Grid>
-      {/* <Grid title="EffectHook">
+      <Grid title="EffectHook">
         <EffectHook />
       </Grid>
       <Grid title="ReducerHook">
@@ -63,11 +64,7 @@ function App() {
           ChildrenComponent
         </ChildrenComponent>
       </Grid> */}
-      <Grid title="ChildrenComponent">
-        <ChildrenComponent>
-          ChildrenComponent
-        </ChildrenComponent>
-      </Grid> 
+      <LayoutEffectHook />
     </div>
   );
 }
